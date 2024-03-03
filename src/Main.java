@@ -14,6 +14,9 @@ public class Main {
         Penguin zoya = new Penguin("Зоя", 45, LocalDate.now(), new Owner());
         Shark zub = new Shark ("Зуб", 300, LocalDate.now(), new Owner());
         Shark carl = new Shark("Карл", 350, LocalDate.now(), new Owner());
+        Bird kesha = new Bird("Кеша", 10, LocalDate.now(), new Owner());
+        Duck mak = new Duck("Мак", 15, LocalDate.now(), new Owner());
+        Snake zmey = new Snake("Змей", 20, LocalDate.now(), new Owner());
 //        System.out.println(liova);
 
 //        System.out.println(liova2);
@@ -31,9 +34,15 @@ public class Main {
         animals.add(zoya);
         animals.add(zub);
         animals.add(carl);
+        animals.add(kesha);
+        animals.add(mak);
+        animals.add(zmey);
         System.out.println(animals);
         liova.LionLifeCycle();
         puzo.PenguinLifeCycle();
-        zub.SharkLifeCycle();
-    }
+        kesha.BirdLifeCycle();
+        mak.DuckLifeCycle();
+        zmey.SnakeLifeCycle();
+        carl.SharkLifeCycle();
+}
 }
